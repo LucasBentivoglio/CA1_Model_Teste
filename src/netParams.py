@@ -7,17 +7,11 @@ Created on Tue Feb  9 14:18:01 2021
 """
 import sys
 import os
-
-project_root = os.getcwd()
-if project_root not in sys.path:
-    sys.path.append(project_root)
-
-
 from netpyne import specs
 import numpy as np
 import random
 
-import t3funcs as t3f
+from . import t3funcs as t3f
 
 
 
