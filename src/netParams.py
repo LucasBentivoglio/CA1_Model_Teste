@@ -11,7 +11,7 @@ from netpyne import specs
 import numpy as np
 import random
 
-from . import t3funcs as t3f
+from src import t3funcs as t3f
 
 
 
