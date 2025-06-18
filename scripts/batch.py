@@ -25,7 +25,7 @@ def batchTauWeight():
 
  
     b.batchLabel = 'v1_batch1'
-    b.saveFolder = 'data/processed/v1_batch1'
+    b.saveFolder = 'data/v1_batch1'
     b.method = 'grid'
     
     doslurm = True    
