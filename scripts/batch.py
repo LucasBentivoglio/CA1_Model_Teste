@@ -21,7 +21,7 @@ def batchTauWeight():
     params['artifperpyr'] = [140]
     params['seedval'] = list(range(0 + seedbase, 100 + seedbase, 100)) 
     
-    b = Batch(params=params, cfgFile='cfg.py', netParamsFile='netParams.py',)
+    b = Batch(params=params, cfgFile='src/cfg.py', netParamsFile='src/netParams.py',)
 
  
     b.batchLabel = 't42'
