@@ -153,8 +153,7 @@ cfg.recordTraces['V_soma'] = {'sec':'soma_0','loc':0.5,'var':'v'}
  
     
 cfg.analysis['plotTraces'] = { 
-                                        'include': list(range(4)), 
-                                      
+                                        'include': [['PYR_pop', i]for i in range(5)], 
                                         'saveFig': True, 
                                         'showFig': False,
                                  
