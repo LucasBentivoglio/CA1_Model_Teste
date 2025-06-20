@@ -135,7 +135,6 @@ cfg.distributeSynsUniformly = False
 cfg.connRandomSecFromList = True
 
 cfg.recordStep = 1 			# Step size in ms to save data (eg. V traces, LFP, etc)
-cfg.savePickle = False 		# Save params, network and sim output to pickle file
 cfg.saveFileStep = 1000 # step size in ms to save data to disk
 
 
@@ -160,5 +159,7 @@ cfg.analysis['plotTraces'] = {
                                         } # Plot cell traces 
 
     
-cfg.saveJson = True
+cfg.saveJson = False
+cfg.savePickle = True
+cfg.saveDataInclude = ['simData', 'simConfig', 'net', 'netParams'] # Save simData, simConfig and netParams objects in data file 
 cfg.seeds = {'conn': cfg.seedval + 7515, 'stim': cfg.seedval + 84331, 'loc': cfg.seedval + 943}
